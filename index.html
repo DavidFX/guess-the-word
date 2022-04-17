@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:regular&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman</title>
+  </head>
+  <body>
+    <div class="container">
+      <input readonly="readonly" type="text" id="wordToGuess" placeholder="Refresh the page">
+      <div class="hearts">
+        <button class="heart">❤</button>
+        <button class="heart">❤</button>
+        <button class="heart">❤</button>
+        <button class="heart">❤</button>
+        <button class="heart">❤</button>
+      </div>
+      <div class="leters">
+        <button onclick="pressBtn('a', event)" class="btn">A</button>
+        <button onclick="pressBtn('b', event)" class="btn">B</button>
+        <button onclick="pressBtn('c', event)" class="btn">C</button>
+        <button onclick="pressBtn('d', event)" class="btn">D</button>
+        <button onclick="pressBtn('e', event)" class="btn">E</button>
+        <button onclick="pressBtn('f', event)" class="btn">F</button>
+        <button onclick="pressBtn('g', event)" class="btn">G</button>
+        <button onclick="pressBtn('h', event)" class="btn">H</button>
+        <button onclick="pressBtn('i', event)" class="btn">I</button>
+        <button onclick="pressBtn('j', event)" class="btn">J</button>
+        <button onclick="pressBtn('k', event)" class="btn">K</button>
+        <button onclick="pressBtn('l', event)" class="btn">L</button>
+        <button onclick="pressBtn('m', event)" class="btn">M</button>
+        <button onclick="pressBtn('n', event)" class="btn">N</button>
+        <button onclick="pressBtn('o', event)" class="btn">O</button>
+        <button onclick="pressBtn('p', event)" class="btn">P</button>
+        <button onclick="pressBtn('q', event)" class="btn">Q</button>
+        <button onclick="pressBtn('r', event)" class="btn">R</button>
+        <button onclick="pressBtn('s', event)" class="btn">S</button>
+        <button onclick="pressBtn('t', event)" class="btn">T</button>
+        <button onclick="pressBtn('u', event)" class="btn">U</button>
+        <button onclick="pressBtn('v', event)" class="btn">V</button>
+        <button onclick="pressBtn('w', event)" class="btn">W</button>
+        <button onclick="pressBtn('x', event)" class="btn">X</button>
+        <button onclick="pressBtn('y', event)" class="btn">Y</button>
+        <button onclick="pressBtn('z', event)" class="btn">Z</button>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
+}
+
+body {  
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--gradient-9);
+  overflow: hidden;
+  font-family: Ubuntu;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Containers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: var(--gray-0);
+  padding: 15px;
+  border-radius: var(--radius-3);
+  margin: 0px 15px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.leters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn {
+  color: var(--gray-0);
+  background-color: var(--cyan-6);
+  border-radius: var(--radius-2);
+  padding: 5px var(--size-fluid-1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+  transition: all .3s var(--ease-5);
+  font-size: var(--font-size-fluid-2);
+  font-family: Ubuntu;
+}
+
+.btn:hover{
+  background-color: var(--cyan-4);
+}
+
+.used {
+  border-radius: var(--radius-2);
+  padding: 5px var(--size-fluid-1);
+  border: none;
+  outline: none;
+  cursor: default;
+  box-shadow: var(--shadow-1);
+  transition: all .3s var(--ease-5);
+  font-size: var(--font-size-fluid-2);
+  font-family: Ubuntu;
+  background-color: var(--green-8);
+  color: var(--gray-0);
+  pointer-events: none;
+}
+
+.wrong {
+  border-radius: var(--radius-2);
+  padding: 5px var(--size-fluid-1);
+  border: none;
+  outline: none;
+  cursor: default;
+  box-shadow: var(--shadow-1);
+  transition: all .3s var(--ease-5);
+  font-size: var(--font-size-fluid-2);
+  font-family: Ubuntu;
+  background-color: var(--red-8);
+  color: var(--gray-0);
+  pointer-events: none;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hearts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.hearts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-fluid-1);
+  margin: 0px 0px var(--size-fluid-1) 0px;
+}
+
+.heart {
+  color: var(--gray-0);
+  background-color: var(--red-6);
+  border-radius: var(--radius-2);
+  padding: 10px var(--size-fluid-2);
+  border: none;
+  outline: none;
+  box-shadow: var(--shadow-1);
+  font-size: var(--font-size-fluid-1);
+}
+
+.lost { 
+  background-color: var(--gray-6);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Input ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#wordToGuess{
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  border-radius: var(--radius-3);
+  padding: var(--size-fluid-1);
+  font-size: var(--font-size-fluid-2);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 0px var(--size-fluid-1) 0px;
+  background-color: var(--gray-0);
+  margin: 0px 0px var(--font-size-fluid-3) 0px;
+  font-size: var(--font-size-fluid-2);
+  cursor:default;
+}
